@@ -27,7 +27,7 @@ class StageToMSSQLOperator(BaseOperator):
     @apply_defaults
     def __init__(
         self,
-        mssql_conn_id: str = "",
+        mssql_conn_id: str = "mssql_default",
         table: str = "",
         file_path: str = "",
         file_format: str = "csv",
